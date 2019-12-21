@@ -27,7 +27,7 @@ $.extend(QueryBuilder, {
 					break;
 				case 'datetime':
 					filter.type = 'date';
-					//filter.input = 'text';
+					filter.input = 'text';
 					filter.plugin = 'datetimepicker';
 					filter.plugin_config = {
 						format: 'yyyy-mm-dd hh:ii',
