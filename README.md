@@ -13,18 +13,20 @@
 Only works with the content type "application/x-www-form-urlencoded" and the GET method. Query parameters are encoded using $.param and decoded using $.deparam. The default decoded parameters example:
 
 ```JSON
-"filter": [
-    [
-        "or",
-        ["user.updatedBy.name", "like", "administrator"],
-        ["user.updatedBy.name", "notLike", "nimda"],
-        [
-            ["user.id", "isNotNull"],
-            ["user.id", "between", 1, 2]
-        ]
-    ],
-    ["user.id", "in", [ 1, 2, 3 ]]
-]
+{
+	"filter": [
+	    [
+	        "or",
+	        ["user.updatedBy.name", "like", "administrator"],
+	        ["user.updatedBy.name", "notLike", "nimda"],
+	        [
+	            ["user.id", "isNotNull"],
+	            ["user.id", "between", 1, 2]
+	        ]
+	    ],
+	    ["user.id", "in", [ 1, 2, 3 ]]
+	]
+}
 ```
 
 In this case, the form fields will be automatically restored. To override this behavior, edit [src/itaces/adapter.js](src/itaces/adapter.js).
