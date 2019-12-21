@@ -14,7 +14,7 @@ Only works with the content type "application/x-www-form-urlencoded" and the GET
 
 ```JSON
 {
-	"filter": [
+	filter: [
 	    [
 	        "or",
 	        ["user.updatedBy.name", "like", "administrator"],
