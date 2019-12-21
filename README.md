@@ -50,7 +50,7 @@ In this case, the form fields will be automatically restored. To override this b
 ## Install
 
 ```bash
-npm install nested-criteria-builder
+npm install git:/git@bitbucket.org:vitaliy_kovalenko/nested-criteria-builder.git
 ```
 
 ## Setting up
