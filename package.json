@@ -1,0 +1,32 @@
+{
+	"main": "gulpfile.js",
+	"scripts": {
+		"dev": "npm run development",
+		"development": "gulp"
+	},
+	"keywords": [
+		"jquery",
+		"nested",
+		"criteria",
+		"filter"
+	],
+	"license": "MIT",
+	"name": "nested-criteria-builder",
+	"version": "1.0.0",
+	"author": {
+		"name": "Vitaliy Kovalenko",
+		"email": "vvk@kola.cloud"
+	},
+	"bundleDependencies": false,
+	"dependencies": {
+		"bootstrap": "^4.4.1",
+		"bootstrap-datepicker": "^1.8.0",
+		"bootstrap-datetimepicker": "^0.0.7",
+		"bootstrap-timepicker": "^0.5.2",
+		"dot": ">=1.0.3",
+		"jquery": "^3.3.1",
+		"jquery-extendext": ">=0.1.2",
+		"jquery-deparam": "^0.5.3",
+		"moment": "^2.21.0"
+	}
+}

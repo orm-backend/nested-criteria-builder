@@ -1,0 +1,55 @@
+{
+    "name": "nested-criteria-builder",
+    "desc": "Filter builder with support for nested criteria.",
+    "version": "1.0.0",
+    "config": {
+        "debug": true,
+        "compile": {
+        	"rtl": {
+                "enabled": false
+            },
+            "jsUglify": false,
+            "cssMinify": false,
+            "jsSourcemaps": false,
+            "cssSourcemaps": false
+        },
+        "path": {
+            "src": "./src",
+            "i18n": "./i18n"
+        },
+        "dist": [
+            "./dist"
+        ]
+    },
+    "build": {
+        "nested-criteria-builder": {
+        	"src": {
+        		"styles": [
+        			"{$config.path.src}/scss/default.scss"
+        		],
+        		"scripts": [
+            		"{$config.path.src}/main.js",
+            		"{$config.path.src}/defaults.js",
+            		"{$config.path.src}/plugins.js",
+            		"{$config.path.src}/core.js",
+            		"{$config.path.src}/public.js",
+            		"{$config.path.src}/data.js",
+            		"{$config.path.src}/template.js",
+            		"{$config.path.src}/utils.js",
+            		"{$config.path.src}/model.js",
+            		"{$config.path.src}/jquery.js",
+            		"{$config.path.src}/plugins/native-select.js",
+            		"{$config.path.src}/itaces/functions.js",
+            		"{$config.path.src}/itaces/converter.js",
+            		"{$config.path.src}/itaces/adapter.js",
+            		"{$config.path.src}/itaces/metadata.js",
+            		"{$config.path.i18n}/query-builder.en.js"
+            	]
+            },
+        	"bundle": {
+	        	"styles": "{$config.dist}/nested-criteria-builder.css",
+                "scripts": "{$config.dist}/nested-criteria-builder.js"
+        	}
+        }
+    }
+}
