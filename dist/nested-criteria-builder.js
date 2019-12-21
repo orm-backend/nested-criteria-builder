@@ -2064,17 +2064,21 @@ QueryBuilder.prototype.setRules = function(data, options) {
 };
 
 QueryBuilder.prototype.submit = function() {
-	var url = window.location.pathname;
 	var rules = this.getRules({ allow_invalid: false, skip_empty: true });
 
-	if (rules !== null) {
-		if (!$.isEmptyObject(rules)) {
-			var filter = this.toItAces(rules);
-			var query = $.param({filter: filter});
-			url += '?' + query;
+	if (rules !== null) { // valid or empty
+		var params = {};
+		var query = window.location.search ? window.location.search.substr(1) : '';
+		
+		if (query) {
+			params = $.deparam(query);
 		}
 		
-		window.location.assign(url);
+		if (!$.isEmptyObject(rules)) {
+			params.filter = this.toItAces(rules);
+		}
+
+		window.location.assign(window.location.pathname + '?' + $.param(params));
 	}
 };
 
@@ -4401,7 +4405,7 @@ $.extend(QueryBuilder, {
 					break;
 				case 'datetime':
 					filter.type = 'date';
-					//filter.input = 'text';
+					filter.input = 'text';
 					filter.plugin = 'datetimepicker';
 					filter.plugin_config = {
 						format: 'yyyy-mm-dd hh:ii',
