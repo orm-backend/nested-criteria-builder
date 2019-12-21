@@ -502,6 +502,8 @@ QueryBuilder.prototype.submit = function() {
 		
 		if (!$.isEmptyObject(rules)) {
 			params.filter = this.toItAces(rules);
+		} else if (params.filter !== undefined) {
+			delete params.filter;
 		}
 
 		window.location.assign(window.location.pathname + '?' + $.param(params));
