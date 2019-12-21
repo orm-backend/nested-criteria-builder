@@ -28,5 +28,9 @@
 		"jquery-extendext": ">=0.1.2",
 		"jquery-deparam": "^0.5.3",
 		"moment": "^2.21.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@bitbucket.org:vitaliy_kovalenko/nested-criteria-builder.git"
 	}
 }
