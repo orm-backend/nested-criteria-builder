@@ -2068,6 +2068,7 @@ QueryBuilder.prototype.submit = function() {
 
 	if (rules !== null) { // valid or empty
 		var params = {};
+		var url = window.location.pathname;
 		var query = window.location.search ? window.location.search.substr(1) : '';
 		
 		if (query) {
@@ -2079,8 +2080,12 @@ QueryBuilder.prototype.submit = function() {
 		} else if (params.filter !== undefined) {
 			delete params.filter;
 		}
+		
+		if (!$.isEmptyObject(params)) {
+			url += '?' + $.param(params);
+		}
 
-		window.location.assign(window.location.pathname + '?' + $.param(params));
+		window.location.assign(url);
 	}
 };
 
