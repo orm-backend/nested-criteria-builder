@@ -4458,6 +4458,8 @@ $.extend(QueryBuilder, {
 					filter.values = meta.options;
 					break;
 				case 'reference':
+				case 'file':
+				case 'image':
 					filter.type = 'reference';
 					filter.metedataUrl = '/admin/datatable/'+meta.refClassUrlName+'/metadata';
 					break;
