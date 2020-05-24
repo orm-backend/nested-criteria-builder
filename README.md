@@ -50,7 +50,7 @@ In this case, the form fields will be automatically restored. To override this b
 ## Install
 
 ```bash
-npm install git:/git@bitbucket.org:vitaliy_kovalenko/nested-criteria-builder.git
+npm install
 ```
 
 ## Setting up
@@ -60,7 +60,7 @@ You may wish to override [src/itaces/metadata.js](src/itaces/metadata.js) to pro
 ## Build
 
 ```bash
-gulp
+npm run dev
 ```
 
 ## License
