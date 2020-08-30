@@ -51,6 +51,6 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@bitbucket.org:vitaliy_kovalenko/nested-criteria-builder.git"
+		"url": "git+ssh://git@github.com:vvk-kolsky/nested-criteria-builder.git"
 	}
 }
