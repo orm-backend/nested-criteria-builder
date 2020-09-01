@@ -2076,7 +2076,7 @@ QueryBuilder.prototype.submit = function() {
 		}
 		
 		if (!$.isEmptyObject(rules)) {
-			params.filter = this.toItAces(rules);
+			params.filter = this.toOrmBackend(rules);
 		} else if (params.filter !== undefined) {
 			delete params.filter;
 		}
@@ -4060,7 +4060,7 @@ if (typeof Array.isArray === 'undefined') {
 	}
 }
 
-QueryBuilder.prototype.toItAces = function(filters) {
+QueryBuilder.prototype.toOrmBackend = function(filters) {
 
 	function switchOperator(operator) {
 		switch(operator) {
