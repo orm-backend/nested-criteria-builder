@@ -29,7 +29,7 @@ Only works with the content type "application/x-www-form-urlencoded" and the GET
 }
 ```
 
-In this case, the form fields will be automatically restored. To override this behavior, edit [src/itaces/adapter.js](src/itaces/adapter.js).
+In this case, the form fields will be automatically restored. To override this behavior, edit [src/ormbackend/adapter.js](src/ormbackend/adapter.js).
 
 ### Dependencies
  * [jQuery 3](https://jquery.com)
@@ -55,7 +55,7 @@ npm install
 
 ## Setting up
 
-You may wish to override [src/itaces/metadata.js](src/itaces/metadata.js) to provide the correct settings for fetching and converting metadata from your server. For embedding in your design, look and modify [src/template.js](src/template.js).
+You may wish to override [src/ormbackend/metadata.js](src/ormbackend/metadata.js) to provide the correct settings for fetching and converting metadata from your server. For embedding in your design, look and modify [src/template.js](src/template.js).
 
 ## Build
 

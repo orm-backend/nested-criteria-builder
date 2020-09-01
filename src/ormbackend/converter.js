@@ -1,4 +1,4 @@
-QueryBuilder.prototype.toItAces = function(filters) {
+QueryBuilder.prototype.toOrmBackend = function(filters) {
 
 	function switchOperator(operator) {
 		switch(operator) {

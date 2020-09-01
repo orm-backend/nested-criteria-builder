@@ -39,10 +39,10 @@
             		"{$config.path.src}/model.js",
             		"{$config.path.src}/jquery.js",
             		"{$config.path.src}/plugins/native-select.js",
-            		"{$config.path.src}/itaces/functions.js",
-            		"{$config.path.src}/itaces/converter.js",
-            		"{$config.path.src}/itaces/adapter.js",
-            		"{$config.path.src}/itaces/metadata.js",
+            		"{$config.path.src}/ormbackend/functions.js",
+            		"{$config.path.src}/ormbackend/converter.js",
+            		"{$config.path.src}/ormbackend/adapter.js",
+            		"{$config.path.src}/ormbackend/metadata.js",
             		"{$config.path.i18n}/query-builder.en.js"
             	]
             },

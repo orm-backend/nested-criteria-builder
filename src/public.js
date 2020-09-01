@@ -502,7 +502,7 @@ QueryBuilder.prototype.submit = function() {
 		}
 		
 		if (!$.isEmptyObject(rules)) {
-			params.filter = this.toItAces(rules);
+			params.filter = this.toOrmBackend(rules);
 		} else if (params.filter !== undefined) {
 			delete params.filter;
 		}
