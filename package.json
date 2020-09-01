@@ -12,7 +12,7 @@
 	],
 	"license": "MIT",
 	"name": "nested-criteria-builder",
-	"version": "1.0.0",
+	"version": "1.0.3",
 	"author": {
 		"name": "Vitaliy Kovalenko",
 		"email": "vvk@kola.cloud"
